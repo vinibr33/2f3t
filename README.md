@@ -1,2 +1,2 @@
 # DUPLA
-## Nathan - N°28 --- Vinicius N°35
+## Nathan - N°28 --- Vinicius - N°35
