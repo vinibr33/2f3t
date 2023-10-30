@@ -7,6 +7,10 @@ raiz = x => Math.sqrt(x);
 
 let a = "";
 let b = "";
+let c = "";
+let sa = "+";
+let sb = "+";
+let sc = "+";
 let valor = "";
 let temPonto = false;
 let desligada = true;
@@ -82,4 +86,8 @@ function calcula(){
         valor = "";
         temPonto = false;
     }
+}
+
+const set_sinal_a = ()=>{
+
 }
