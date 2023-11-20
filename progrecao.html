@@ -5,18 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progressoẽs</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <section class="pa">
         <div class="explicação">
-            <h1>Progressão Aritimética (PA)</h1><br>
-            Geral: a<sub>1</sub>, a<sub>2, </sub>a<sub>3</sub>,...,a<sub>n</sub><br>
-            Razão (r): r = a<sub>2</sub> - a<sub>1</sub><br>
-            Último Termo: a<sub>n</sub> = a<sub>1</sub> + (n - 1) . r
+            <h1>Progressão Aritimética (PA)</h1><BR>
+            Geral=a<sub>1</sub>, a <sub>2,</sub>a<sub>3</sub>,...,a<sub>n</sub><br>
+            Razão (r): r=a <sub>2</sub> - a<sub>1</sub><br>
+            ultimo termo:a <sub>n</sub>=a <sub>1</sub>+(n-1).r
         </div>
+
         <div class="calculaPA">
-            r = <input type="number">
+            r = <input type="number" onchange="set_razao()" id="razao"><br>
+            a<sub>1</sub>=<input onchange="set_a1()" type="number" id="a1"><br>
+            a<sub>n</sub>=<input type="number" readonly id="an"><br>
+            n=<input type="number" onchange="set_n()" id="n">
+
+            PA =  <span id="pa"></span>
         </div>
+
     </section>
 </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: green;
     color: aqua;
 }
 
@@ -39,4 +39,17 @@ button {
     color: white;
     border: none;
     border-bottom: 2px solid #FFF;
+}
+
+.pa {
+    width: 100%;
+    background-color: rgba(red, green, blue, alpha);
+    padding: 20px;
+    color: black;
+}
+
+.calculaPA input {
+    width: 48px;
+    border: none;
+    border: 1px solid black;
 }

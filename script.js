@@ -136,3 +136,28 @@ const set_valor_c = ()=>{
     c = document.getElementById("valor_c").value;
     calcula_eq2g();
 }
+let r = 0;
+let a1 = "";
+let n = "";
+const mostrar_pa = () =>{
+    if(a1 != "" && r != "" && n != ""){
+        let pa = a1;
+        for(let i = 1; i < n; i++){
+            pa += ", "+ (i*r) + Number(a1); 
+        }
+        document.getElementById("pa").innerHTML = pa;
+        document.getElementById("an").value = Number(a1) + (n - 1)*r;
+    }
+}
+const set_razao = () => {
+    r = document.getElementById("razao").value;
+    mostrar_pa();
+}
+const set_a1 = () => {
+    a1 = document.getElementsById("a1").value;
+    mostrar_pa();
+}
+const set_n = () => {
+    n = document.getElementById("n").value;
+    mostrar_pa();
+}
